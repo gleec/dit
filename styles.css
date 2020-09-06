@@ -27,6 +27,39 @@ header {
   align-items: center;
 }
 
+footer {
+  background-color: #fcf3f5;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+footer .content-footer, footer .content-footer h2 {
+  text-align: center;
+}
+
+footer .content-footer button {
+  margin-bottom: 30px;
+  width: 150px;
+}
+
+footer .content-footer p {
+  color: var(--secondary);
+}
+
+.form-group input {
+  width: 100%;
+  max-width: 300px;
+  height: 55px;
+  background-color: #fff;
+  box-shadow: 0px 22px 37px #D9D9D929;
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 16px;
+  padding-left: 12px;
+  padding-right: 12px; 
+}
+
+
 a {
   color: var(--primary);
 }
@@ -43,7 +76,7 @@ h2.title {
   font-size: 30px;
 }
 
-.title > span {
+.title>span {
   color: var(--primary);
 }
 
@@ -62,14 +95,14 @@ h2.title {
 .title {
   margin-bottom: 20px;
   text-align: left;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--secondary);
 }
 
 .description {
   margin-bottom: 20px;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 25px;
   text-align: left;
 }
 
@@ -85,22 +118,21 @@ h2.title {
   margin-top: 112px;
 }
 
-.hero img {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.hero .img {
+  padding-top: 40px;
 }
 
 .call-to-action {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .call-to-action p {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 0.5rem;
   color: var(--secondary);
 }
 
-.call-to-action p > a {
+.call-to-action p>a {
   margin-left: 5px;
 }
 
@@ -111,7 +143,12 @@ h2.title {
   border: var(--primary);
   border-radius: 3px;
   color: #fff;
-  font-size: 12px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.link.light {
+  font-weight: 600;
 }
 
 .deal .title {
@@ -139,23 +176,28 @@ h2.title {
   text-align: center;
 }
 
-.your-startup > a{
+.your-startup>a {
   padding-bottom: 20px;
 }
 
-.startup > img {
+.startup>img {
   padding-top: 30px;
 }
 
 .item-startup-split {
   display: flex;
   align-content: center;
+  flex-direction: column;
 }
 
-.item-startup-split  .text {
+.item-startup-split img {
+  margin-right : 10px;
+}
+
+.item-startup-split .text {
   margin-bottom: 20px;
   color: var(--secondary);
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .item-startup-left {
@@ -165,48 +207,54 @@ h2.title {
 .product {
   display: flex;
   align-content: center;
+  flex-direction: column;
 }
 
 .product .img {
+  position: relative;
   display: inline-block;
-  margin-bottom: 20px;
-  margin-right: 18px;
-  width: 130px;
-  height: 130px;
   margin: auto;
+  max-width: 180px;
 }
 
-.product .img p{
+.product .img p {
   position: absolute;
+  top: 50%;
   left: 50%;
-  transform: -50%;
-  translate: -50%;
+  transform: translate(-50%,-50%);
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--primary);
 }
 
 .product .title {
   font-size: 18px;
-} 
+}
 
-.product .description{
+.product .description {
   margin-bottom: 0;
-} 
+}
 
 .content-product {
   padding: 1rem 1.5rem;
 }
 
-.business-growth > img {
+.business-growth>img {
   padding-top: 20px;
-  padding-bottom:30px;
+  padding-bottom: 15px;
 }
 
 .us {
   text-align: center;
 }
 
+.us .title{
+  text-align: center;
+}
+
 .us .description {
   text-align: center;
-} 
+}
 
 .employee img {
   height: 200px;
@@ -216,14 +264,14 @@ h2.title {
 .employee .name {
   margin-bottom: 10px;
   color: var(--secondary);
-  font-size: 18px; 
+  font-size: 18px;
   font-weight: 700;
 }
 
 .employee .position {
   margin-bottom: 20px;
   color: var(--primary);
-  font-size: 14px; 
+  font-size: 14px;
 }
 
 .company-client {
@@ -240,7 +288,11 @@ h2.title {
 
 .company-client img {
   display: inline-block;
-  width: 150px;
   padding: 0.75rem 1.5rem;
+}
+
+.img-split {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
+
