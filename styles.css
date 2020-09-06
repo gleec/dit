@@ -35,8 +35,20 @@ img {
   max-width: 100%;
 }
 
+h1.title {
+  font-size: 40px;
+}
+
+h2.title {
+  font-size: 30px;
+}
+
 .title > span {
   color: var(--primary);
+}
+
+.padding {
+  padding: 1rem 2rem;
 }
 
 .menu-item {
@@ -47,14 +59,8 @@ img {
   background-color: var(--primary);
 }
 
-.hero {
-  padding: 1rem 2rem;
-  margin-top: 112px;
-}
-
 .title {
   margin-bottom: 20px;
-  font-size: 40px;
   text-align: left;
   font-weight: 700;
   color: var(--secondary);
@@ -73,6 +79,15 @@ img {
   margin: 2rem auto;
   border-radius: 5px;
   background-color: #bcbcbc;
+}
+
+.hero {
+  margin-top: 112px;
+}
+
+.hero img {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .call-to-action {
@@ -100,16 +115,11 @@ img {
 }
 
 .deal .title {
-  font-size: 30px;
   text-align: center;
 }
 
 .deal .description {
   text-align: center;
-}
-
-.business {
-  padding: 0.75rem 1.5rem;
 }
 
 .business-item img {
@@ -129,71 +139,69 @@ img {
   text-align: center;
 }
 
-.startup {
-  padding: 0.75rem 1.5rem;
+.your-startup > a{
+  padding-bottom: 20px;
 }
 
-.your-startup .title {
-  font-size: 30px;
+.startup > img {
+  padding-top: 30px;
 }
 
 .item-startup-split {
   display: flex;
   align-content: center;
-  justify-content: space-between;
 }
 
-.item-startup-split .item-startup .text {
+.item-startup-split  .text {
   margin-bottom: 20px;
-  font-size: 10px;
   color: var(--secondary);
+  font-size: 10px;
 }
 
-.business-growth {
-  padding: 0.75rem 1.5rem;
-}
-
-.business-growth .content .title {
-  font-size: 30px;
-}
-
-.products {
-  padding: 0.75rem 1.5rem;
+.item-startup-left {
+  margin-right: 60px;
 }
 
 .product {
   display: flex;
   align-content: center;
-  justify-content: space-between;
 }
 
-.product img {
+.product .img {
   display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 18px;
   width: 130px;
   height: 130px;
   margin: auto;
-  margin-bottom: 20px;
+}
+
+.product .img p{
+  position: absolute;
+  left: 50%;
+  transform: -50%;
+  translate: -50%;
 }
 
 .product .title {
-    font-size: 18px;
+  font-size: 18px;
 } 
 
 .product .description{
-    margin-bottom: 0;
+  margin-bottom: 0;
 } 
 
 .content-product {
-    padding: 1rem 1.5rem;
+  padding: 1rem 1.5rem;
+}
+
+.business-growth > img {
+  padding-top: 20px;
+  padding-bottom:30px;
 }
 
 .us {
-  padding: 0.75rem 1.5rem;
   text-align: center;
-}
-
-.us .title {
-  font-size: 30px;
 }
 
 .us .description {
@@ -206,25 +214,24 @@ img {
 }
 
 .employee .name {
+  margin-bottom: 10px;
+  color: var(--secondary);
   font-size: 18px; 
   font-weight: 700;
-  color: var(--secondary);
-  margin-bottom: 10px;
 }
 
-.employee .position{
-  font-size: 14px; 
-  color: var(--primary);
+.employee .position {
   margin-bottom: 20px;
+  color: var(--primary);
+  font-size: 14px; 
 }
 
 .company-client {
-    padding: 0.75rem 1.5rem;
-    text-align: center;
+  text-align: center;
 }
 
 .company-client .title {
-  font-size: 30px;
+  text-align: center;
 }
 
 .company-client .description {
@@ -234,7 +241,6 @@ img {
 .company-client img {
   display: inline-block;
   width: 150px;
-  height: 130px;
   padding: 0.75rem 1.5rem;
   margin-bottom: 20px;
 }
