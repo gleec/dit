@@ -216,9 +216,18 @@
                     <input type="email" name="email" id="email" placeholder="Your Email" required>
                 </div>
             </form>
-            <button class="link dark">
+            <button id=button class="link dark">
                 Subscribe
             </button>
+
+            <script>
+                document.getElementById("button").addEventListener("click", function () {
+                    var name = document.getElementById("name").value,
+                        email = document.getElementById("email").value;
+
+                    alert( `Enviado con éxito `);
+                })
+            </script>
             <p class="text">© 2020 Dit. All rights reserved.</p>
         </div>
     </footer>
