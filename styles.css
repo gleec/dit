@@ -16,7 +16,8 @@ body {
   font-family: "Cabin", sans-serif;
 }
 
-a {
+a { 
+
   color: var(--primary);
 }
 
@@ -258,6 +259,7 @@ header {
 
 .product .description {
   margin-bottom: 0;
+  max-width: 320px;
 }
 
 .content-product {
@@ -297,6 +299,10 @@ header {
   margin-bottom: 20px;
   color: var(--primary);
   font-size: 14px;
+}
+
+.employee .description {
+  max-width: 430px;
 }
 
 .company-client {
@@ -344,6 +350,22 @@ footer .menu-footer {
   display: none;
 }
 
+@media (min-width: 768px) {
+
+  .product .title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .product .description {
+    margin: auto;
+  } 
+
+  .employee .description {
+    margin: auto;
+  }
+}
+
 @media (min-width: 1024px) {
 
   h1.title {
@@ -362,6 +384,15 @@ footer .menu-footer {
 
   header {
     padding: 2rem 4rem;
+    max-width: 1200px;
+    margin: auto;
+    transform: translate(-50%);
+    left: 50%;
+  }
+
+  body {
+    max-width: 1200px;
+    margin: auto;
   }
 
   .menu-button {
