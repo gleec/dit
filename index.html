@@ -9,8 +9,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles.css">
+    <script src="./main.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,32 @@
         <div class="logo">
             <img src="/img/Logo.svg" alt="Dit Logo">
         </div>
-        <div class="menu-button">
+        <nav id="menu" class="menu">
+            <button id="close">
+                <img src="./img/close.png" alt="Close">
+            </button>
+            <ul>
+                <li>
+                    <a href="https:google.com">Home</a>
+                </li>
+                <li>
+                    <a href="https:google.com">About</a>
+                </li>
+                <li>
+                    <a href="https:google.com">Services</a>
+                </li>
+                <li>
+                    <a href="https:google.com">Project</a>
+                </li>
+                <li>
+                    <a ref="https:google.com">Pages</a>
+                </li>
+                <li>
+                    <a ref="https:google.com">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="menu-button" class="menu-button">
             <div class="menu-item"></div>
             <div class="menu-item"></div>
             <div class="menu-item"></div>
@@ -75,7 +101,6 @@
                 <p class="description">Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit. Fusce mollis ipsum</p>
             </div>
-            <div class="divider"></div>
         </div>
     </section>
     <section class="startup padding">
@@ -206,7 +231,7 @@
     <footer>
         <div class="content-footer padding">
             <h2 class="title">Have Questions In Mind? Let Us <span>Help You.</span></h2>
-            <form>
+            <form name="form">
                 <div class="form-group">
                     <label for="name"></label>
                     <input type="text" name="name" id="name" placeholder="Your Name" required>
@@ -215,21 +240,40 @@
                     <label for="email"></label>
                     <input type="email" name="email" id="email" placeholder="Your Email" required>
                 </div>
+                <button id=button-form class="link dark">
+                    Subscribe
+                </button>
             </form>
-            <button id=button class="link dark">
-                Subscribe
-            </button>
-
-            <script>
-                document.getElementById("button").addEventListener("click", function () {
-                    var name = document.getElementById("name").value,
-                        email = document.getElementById("email").value;
-
-                    alert( `Enviado con éxito `);
-                })
-            </script>
+            <div class="menu-footer">
+                <div class="logo">
+                    <img src="/img/Logo.svg" alt="Dit Logo">
+                </div>
+                <nav id="menu" class="menu">
+                    <ul>
+                        <li>
+                            <a href="https:google.com">Home</a>
+                        </li>
+                        <li>
+                            <a href="https:google.com">About</a>
+                        </li>
+                        <li>
+                            <a href="https:google.com">Services</a>
+                        </li>
+                        <li>
+                            <a href="https:google.com">Project</a>
+                        </li>
+                        <li>              
+                            <a ref="https:google.com">Pages</a>
+                        </li>
+                        <li>
+                            <a ref="https:google.com">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <p class="text">© 2020 Dit. All rights reserved.</p>
         </div>
+
     </footer>
 </body>
 
